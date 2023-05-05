@@ -1,13 +1,13 @@
-import { CodeIcon } from "@heroicons/react/solid"
-import React from "react"
-import { projects } from "../data"
+import { CodeBracketIcon } from "@heroicons/react/24/solid";
+import React from "react";
+import { projects } from "../data";
 
 export default function Projects() {
     return (
         <section id="projects">
             <div className="container">
                 <div className="col">
-                    <CodeIcon />
+                    <CodeBracketIcon />
                     <h1 className="title">
                         My projects
                     </h1>

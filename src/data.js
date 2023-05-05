@@ -4,7 +4,7 @@ export const projects = [
         subtitle: "Python (PyQt) and SQL",
         description: 
             "A desktop GUI typing game with a customizable interface, several modes and SQL-based storage.",
-        image: "./project-st.png",
+        image: "./project-st.gif",
         link: "https://github.com/mboiar/SimplyType",
     },
     {
@@ -24,3 +24,14 @@ export const projects = [
         link: "https://github.com/mboiar/findable",
     },
 ];
+
+export const skills = [
+    "Python",
+    "C++",
+    "OpenCV",
+    "PyTorch",
+    "Django",
+    "Flask",
+    "RestAPI",
+    "SQL",
+]
