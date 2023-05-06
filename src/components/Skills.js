@@ -5,9 +5,9 @@ import { skills } from "../data";
 export default function Skills() {
     return (
         <section id="skills">
-            <div className="container">
-                <div>
-                    <CpuChipIcon />
+            <div className="container col">
+                <div className="container">
+                    <CpuChipIcon className="icon"/>
                     <h1 className="title">
                         Skills
                     </h1>
@@ -15,15 +15,15 @@ export default function Skills() {
                         Skills?
                     </p>
                 </div>
-                <div>
+                <ul className="container">
                     {skills.map((skill) => (
-                        <div key={skill}>
+                        <li key={skill}>
                             <span>
                                 {skill}
                             </span>
-                        </div>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
         </section>
     );

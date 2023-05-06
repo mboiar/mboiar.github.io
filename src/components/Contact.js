@@ -23,30 +23,18 @@ export default function Contact() {
     return (
         <section id="contact">
             <div className="container">
-                <div>
-                    <div>
-                        <div>
-                            <h2>
-                                ADDRESS
-                            </h2>
-                            <p>
-                                Cracow, Poland
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <form
                     onSubmit={handleSubmit}
                     method="post"
                     name="contact"
-                    className="col">
+                    className="container col">
                     <h2>
                         Get in touch
                     </h2>
                     <p>
                         If you want to collaborate!
                     </p>
-                    <div>
+                    <div className="container">
                         <label htmlFor="name">
                             Name
                         </label>
@@ -54,9 +42,10 @@ export default function Contact() {
                             type="text"
                             id="name"
                             name="name"
+                            required
                         />
                     </div>
-                    <div>
+                    <div className="container">
                         <label htmlFor="email">
                             Email
                         </label>
@@ -64,15 +53,17 @@ export default function Contact() {
                             type="email"
                             id="email"
                             name="email"
+                            required
                         />
                     </div>
-                    <div>
+                    <div className="container">
                         <label htmlFor="message">
                             Message
                         </label>
                         <textarea
                             id="message"
                             name="message"
+                            required
                         />
                     </div>
                     <button

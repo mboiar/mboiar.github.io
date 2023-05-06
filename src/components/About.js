@@ -1,23 +1,26 @@
 import React from "react";
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+    const { t } = useTranslation();
+
     return (
         <section id="about">
             <div className="container row">
                 <div className="container col">
                     <h1 className="title text-white">
-                        Hi, I'm Max.
-                        <br className="hidden" />I do some stuff.
+                        {t("greeting")}
+                        <br className="hidden" />{t("summary")}
                     </h1>
                     <p>
-                        Here are some of my projects.
+                        {t("description")}
                     </p>
-                    <div className="links">
-                        <a href="#contact" className="link-active">
-                            Contact me
+                    <div className="container">
+                        <a href="https://github.com/mboiar" className="link" target="_blank">
+                            Github
                         </a>
-                        <a href="#projects" className="link">
-                            My projects
+                        <a href="https://linkedin.com/in/maksym-boiar" className="link" target="_blank">
+                            LinkedIn
                         </a>
                     </div>
                 </div>

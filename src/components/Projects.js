@@ -5,9 +5,9 @@ import { projects } from "../data";
 export default function Projects() {
     return (
         <section id="projects">
-            <div className="container">
-                <div className="col">
-                    <CodeBracketIcon />
+            <div className="container col">
+                <div className="container">
+                    <CodeBracketIcon className="icon"/>
                     <h1 className="title">
                         My projects
                     </h1>
@@ -15,19 +15,20 @@ export default function Projects() {
                         Will write here something.
                     </p>
                 </div>
-                <div>
+                <ul className="container">
                     {projects.map((project) => (
+                        <li className="container col project-card">
                         <a
                             href={project.link}
                             key={project.image}>
                             <div>
                                 <img
-                                    alt="gallery"
+                                    alt={project.title}
                                     className="image-project"
                                     src={project.image}
                                 />
                                 <div>
-                                    <h2>
+                                    <h2 className="suptitle">
                                         {project.subtitle}
                                     </h2>
                                     <h1>
@@ -37,8 +38,9 @@ export default function Projects() {
                                 </div>
                             </div>
                         </a>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
         </section>
     )
